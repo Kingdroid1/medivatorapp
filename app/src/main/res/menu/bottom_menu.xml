@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_church"
+        android:enabled="true"
+        android:title="@string/btn_chc"
+        android:icon="@drawable/ic_church"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_mall"
+    android:enabled="true"
+    android:title="@string/btn_mall"
+     android:icon="@drawable/ic_mall"
+    app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_restaurant"
+        android:enabled="true"
+        android:title="@string/btn_rest"
+        android:icon="@drawable/ic_restaurant"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_school"
+        android:enabled="true"
+        android:title="@string/btn_sch"
+        android:icon="@drawable/icc_school"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

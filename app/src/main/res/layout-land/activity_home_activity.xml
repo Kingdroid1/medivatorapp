@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_activity"
+    android:background="@drawable/bckb">
+
+    <dyanamitechetan.vusikview.VusikView
+        android:id="@+id/musicView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/new_dawn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:text="@string/new_dawn"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_med"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            android:text="@string/quote"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_play_pause"
+            android:layout_centerHorizontal="true"
+            android:text="00:00" />
+
+        <ImageButton
+            android:id="@+id/btn_play_pause"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="67dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play"
+            android:visibility="visible" />
+        <ImageButton
+            android:id="@+id/btn_skip_next"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textTimer"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_skip_next"
+            android:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_play_pause" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
